@@ -1,0 +1,21 @@
+{
+    "name": "systop",
+    "version": "1.0.0",
+    "description": "app de monitoreo",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron .",
+        "dev": "nodemon --exec electron .",
+        "package-win": "electron-packager . --overwrite --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=false --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Optimizador\""
+    },
+    "author": "sebas2906",
+    "license": "ISC",
+    "devDependencies": {
+        "electron": "^12.0.5",
+        "electron-packager": "^15.2.0"
+    },
+    "dependencies": {
+        "electron-log": "^4.3.4",
+        "node-os-utils": "^1.3.5"
+    }
+}
